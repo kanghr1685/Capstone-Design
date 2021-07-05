@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 10;
+        
+        if (num<500) {
+            document.write("hello");
+        }
+        
+        
+        var walkamount = prompt("당신은 하루에 몇 보를 걷는가", "0");
+
+        if (walkamount >= 10000) {
+            document.write("매우 건강한 습관을 가지고 있군요.");
+        }else{
+            document.write("운동이 필요해 보입니다");
+        }
+
+        
+        var username = prompt("아이디를 입력해주세요", "");
+        
+        if (username) {
+            document.write(username + "님 환영합니다!");
+        }
+        
+        
+        var num2 = prompt("당신이 좋아하는 숫자는?");
+
+        if (num2 % 2 == 0) { //짝수 일 경우에 출력
+            document.write("당신이 좋아하는 숫자는 짝수 입니다.");
+        }else{  //홀수 일 경우에 출력
+            document.write("당신이 좋아하는 숫자는 홀수 입니다.");
+        }
+
+        
+        var result = confirm("회원을 탈되하시겠습니까?");
+
+        if (result) {
+            document.write("탈퇴 처리되었습니다.");
+        }else{
+            document.write("탈퇴가 취소되었습니다.");
+        }
+
+
+    </script>
+</body>
+</html>
