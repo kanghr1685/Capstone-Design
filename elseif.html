@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var mon = prompt("현재는 몇 월입니까?", "0");
+
+        if (mon >= 9 && mon <= 11) {  //9~11
+            document.write("독서의 계절이네요. 책을 읽읍시다.");
+        }else if(mon >= 6 && mon <= 8){  //6~8
+            document.write("물놀이의 계절이네요. 수박을 먹읍시다.");
+        }else if (mon >= 3 && mon <= 5) {  //3~5
+            document.write("꽃피는 계절이네요. 낮잠을 잡시다.");
+        }else{   //나머지
+            document.write("눈이 내리는 계절이네요. 눈사람을 만듭시다.");
+        }
+
+        var id = "eee";
+        var pw = "1111";
+
+        var userid = prompt("아이디는?");
+        var userpw = prompt("비밀번호는?");
+
+        if (id == userid) {
+            if (pw == userpw) {
+                document.write(userid+"님 반갑습니다.");
+            }else{
+                alert("비밀번호가 일치하지 않습니다.");
+            }
+        }else{
+            alert("아이디가 일치하지 않습니다.");
+            location,reload();
+        }
+    </script>
+</body>
+</html>
