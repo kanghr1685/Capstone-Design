@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (var i = 1; i <= 100; i++) {
+            if (i % 5 == 0 && i % 7 != 0) {
+                document.write("<p class = 'red'>"+i+ "</p>");
+            }else if (i % 7 == 0 && i % 5 != 0) {
+                document.write("<p class = 'green'>"+i+ "</p>");
+            }else if (i % 7 == 0 && i % 5 == 0) {
+                document.write("<p class = 'aqua'>"+i+ "</p>");
+            }
+            
+        }
+
+        for (var a =1; a <= 10; a++) {
+            if (a == 6) break;
+            document.write("=== the end ===");
+        }
+
+        for (var b = 1; b <= 10; b++) {
+            if( b % 2 == 0) continue;
+            document.write(b, "<br>");
+        }
+        document.write("=== the end ====");
+
+        for (var c = 1; c <= 3; c++) {
+            for (var k = 1; k<= 2; k++) {
+                document.write(c +"행" + k + "열", "<br>");
+                
+            }
+
+            document.write("<br>");
+            
+        }
+
+
+    </script>
+</body>
+</html>
